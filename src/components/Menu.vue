@@ -119,7 +119,7 @@ import {
 } from "@heroicons/vue/solid";
 
 export default defineComponent({
-	name: "HelloWorld",
+	name: "Menu",
 	components: {
 		Menu,
 		MenuButton,
@@ -133,7 +133,9 @@ export default defineComponent({
 		MenuIcon,
 	},
 	setup: () => {
-		return {};
+		return {
+			duplicate: () => alert("Duplicate this"),
+		};
 	},
 });
 </script>

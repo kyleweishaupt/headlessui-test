@@ -16,14 +16,12 @@
 
 <script lang="ts">
 import { computed, defineComponent } from "vue";
-//import { useStore } from "vuex";
-import store from "../store";
+import { useStore } from "vuex";
+const store = useStore();
 
 export default defineComponent({
 	name: "Counter",
 	setup: () => {
-		//const store = useStore();
-
 		return {
 			count: computed(() => store.state.counter),
 			increment: () => store.commit("increment"),
