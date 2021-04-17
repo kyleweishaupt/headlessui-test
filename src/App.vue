@@ -1,31 +1,23 @@
 <template>
-	<div class="container mx-auto">
+	<div class="max-w-7xl mx-auto sm:px-6 lg:px-8">
 		<img
 			alt="Vue logo"
 			src="./assets/logo.png"
+			class="text-center"
 		/>
-		<HelloWorld msg="Hello Vue 3 + TypeScript + Vite" />
-
-		<div class="mt-3 flex sm:mt-0 sm:ml-4">
-			<Counter />
-			<Menu />
-		</div>
+		<navigation-bar />
+		<router-view />
 	</div>
-	<router-view />
 </template>
 
 <script lang="ts">
 import { defineComponent } from "vue";
-import HelloWorld from "./components/HelloWorld.vue";
-import Counter from "./components/Counter.vue";
-import Menu from "./components/Menu.vue";
+import NavigationBar from "./components/NavigationBar.vue";
 
 export default defineComponent({
 	name: "App",
 	components: {
-		HelloWorld,
-		Counter,
-		Menu,
+		NavigationBar,
 	},
 });
 </script>

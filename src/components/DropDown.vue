@@ -119,7 +119,7 @@ import {
 } from "@heroicons/vue/solid";
 
 export default defineComponent({
-	name: "Menu",
+	name: "DropDown",
 	components: {
 		Menu,
 		MenuButton,
