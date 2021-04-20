@@ -4,6 +4,11 @@
 		"name": "Kyle Weishaupt",
 		"url": "https://kyleweishaupt.com"
 	},
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/kyleweishaupt/headlessui-test.git"
+	},
+	"license": "MIT",
 	"version": "0.0.1",
 	"scripts": {
 		"serve": "vite preview",
