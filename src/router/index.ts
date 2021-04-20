@@ -5,7 +5,13 @@ import About from "../views/About.vue";
 export default createRouter({
 	history: createWebHistory(),
 	routes: [
-		{ path: '/', component: Home },
-		{ path: '/about', component: About }
+		{
+			path: '/',
+			component: Home
+		},
+		{
+			path: '/about',
+			component: About
+		}
 	]
 });

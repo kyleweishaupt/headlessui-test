@@ -21,13 +21,16 @@
 			leave-from-class="transform scale-100 opacity-100"
 			leave-to-class="transform scale-95 opacity-0"
 		>
-			<MenuItems class="absolute right-0 w-56 mt-2 origin-top-right bg-white divide-y divide-gray-100 rounded-md shadow-lg ring-1 ring-black ring-opacity-5 focus:outline-none">
+			<MenuItems class="z-10 absolute right-0 w-56 mt-2 origin-top-right bg-white divide-y divide-gray-100 rounded-md shadow-lg ring-1 ring-black ring-opacity-5 focus:outline-none">
 				<div class="px-1 py-1">
 					<MenuItem v-slot="{ active }">
-					<button :class="[
+					<button
+						@click="edit"
+						:class="[
 							active ? 'bg-indigo-500 text-white' : 'text-coolGray-900',
 							'group flex rounded-md items-center w-full px-2 py-2 text-sm',
-							]">
+							]"
+					>
 						<PencilIcon
 							:active="active"
 							class="w-5 h-5 mr-2 text-indigo-400"
@@ -55,10 +58,13 @@
 				</div>
 				<div className="px-1 py-1">
 					<MenuItem v-slot="{ active }">
-					<button :class="[
+					<button
+						@click="archive"
+						:class="[
 							active ? 'bg-indigo-500 text-white' : 'text-coolGray-900',
 							'group flex rounded-md items-center w-full px-2 py-2 text-sm',
-							]">
+							]"
+					>
 						<ArchiveIcon
 							:active="active"
 							class="w-5 h-5 mr-2 text-indigo-400"
@@ -71,11 +77,14 @@
 						disabled
 						v-slot="{ active }"
 					>
-					<button :class="[
+					<button
+						@click="move"
+						:class="[
 							active ? 'bg-indigo-500 text-white' : 'text-coolGray-900',
 							'group flex rounded-md items-center w-full px-2 py-2 text-sm',
 							'disabled:opacity-50 disabled:cursor-not-allowed'
-							]">
+							]"
+					>
 						<MenuIcon
 							:active="active"
 							class="w-5 h-5 mr-2 text-indigo-400"
@@ -88,10 +97,13 @@
 
 				<div className="px-1 py-1">
 					<MenuItem v-slot="{ active }">
-					<button :class="[
+					<button
+						@click="remove"
+						:class="[
 							active ? 'bg-indigo-500 text-white' : 'text-coolGray-900',
 							'group flex rounded-md items-center w-full px-2 py-2 text-sm',
-							]">
+							]"
+					>
 						<TrashIcon
 							:active="active"
 							class="w-5 h-5 mr-2 text-indigo-400"
@@ -134,7 +146,11 @@ export default defineComponent({
 	},
 	setup: () => {
 		return {
+			edit: () => alert("Edit this"),
+			move: () => alert("Move this"),
+			archive: () => alert("Archive this"),
 			duplicate: () => alert("Duplicate this"),
+			remove: () => alert("Delete this"),
 		};
 	},
 });

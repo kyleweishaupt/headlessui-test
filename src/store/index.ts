@@ -1,5 +1,4 @@
 import { createStore } from 'vuex'
-import Widgets from './widgets'
 
 export default createStore({
 	state: {
@@ -15,6 +14,5 @@ export default createStore({
 	actions: {
 	},
 	modules: {
-		Widgets
 	}
 })

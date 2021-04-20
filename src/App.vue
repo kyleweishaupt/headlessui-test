@@ -3,7 +3,7 @@
 		<img
 			alt="Vue logo"
 			src="./assets/logo.png"
-			class="text-center"
+			class="mx-auto"
 		/>
 		<navigation-bar />
 		<router-view />
