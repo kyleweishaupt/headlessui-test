@@ -1,5 +1,5 @@
 {
-	"name": "test-app",
+	"name": "headlessui-test",
 	"author": {
 		"name": "Kyle Weishaupt",
 		"url": "https://kyleweishaupt.com"
@@ -9,7 +9,7 @@
 		"url": "https://github.com/kyleweishaupt/headlessui-test.git"
 	},
 	"license": "MIT",
-	"version": "0.0.1",
+	"version": "0.0.2",
 	"scripts": {
 		"serve": "vite preview",
 		"build": "vue-tsc --noEmit && vite build",
