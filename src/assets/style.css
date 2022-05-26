@@ -1,0 +1,7 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.custom {
+  @apply p-6 shadow-sm bg-gray-100 rounded-md text-gray-900 font-medium;
+}
