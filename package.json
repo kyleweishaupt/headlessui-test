@@ -13,7 +13,7 @@
   "scripts": {
     "serve": "vite preview",
     "build": "vue-tsc --noEmit && vite build",
-    "dev": "vite"
+    "dev": "vite --port 4000"
   },
   "dependencies": {
     "@headlessui/vue": "^1.6.3",
