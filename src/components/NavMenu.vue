@@ -120,7 +120,6 @@
           :aria-current="item.current ? 'page' : undefined"
           v-text="item.name"
         />
-        >
       </div>
       <div class="border-t border-gray-700 pt-4 pb-3">
         <div class="flex items-center px-5 sm:px-6">
