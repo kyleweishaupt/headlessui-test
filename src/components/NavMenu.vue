@@ -178,6 +178,7 @@ const user = {
 const navigation = [
   { name: "Home", href: "/", current: true },
   { name: "About", href: "/about", current: false },
+  { name: "Async", href: "/async", current: false },
 ];
 const userNavigation = [
   { name: "Your Profile", href: "#" },
