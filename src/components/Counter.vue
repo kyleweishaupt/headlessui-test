@@ -29,7 +29,7 @@
 <script lang="ts">
 import { computed, defineComponent } from "vue";
 import { useStore } from "vuex";
-import { PlusIcon, MinusIcon } from "@heroicons/vue/solid";
+import { PlusIcon, MinusIcon } from "@heroicons/vue/24/solid";
 
 export default defineComponent({
   name: "Counter",
