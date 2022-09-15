@@ -1,7 +1,6 @@
 <template>
   <div class="max-w-7xl mx-auto sm:px-6 lg:px-8">
     <img alt="Vue logo" src="@/assets/logo.png" class="mx-auto" />
-    <div class="custom mb-2">Custom Class</div>
     <navigation-bar />
     <router-view />
   </div>
